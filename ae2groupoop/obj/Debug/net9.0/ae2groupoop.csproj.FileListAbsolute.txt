@@ -1,0 +1,15 @@
+D:\files test\uni\vscodeeeeae2\ae2groupoop\bin\Debug\net9.0\ae2groupoop.exe
+D:\files test\uni\vscodeeeeae2\ae2groupoop\bin\Debug\net9.0\ae2groupoop.deps.json
+D:\files test\uni\vscodeeeeae2\ae2groupoop\bin\Debug\net9.0\ae2groupoop.runtimeconfig.json
+D:\files test\uni\vscodeeeeae2\ae2groupoop\bin\Debug\net9.0\ae2groupoop.dll
+D:\files test\uni\vscodeeeeae2\ae2groupoop\bin\Debug\net9.0\ae2groupoop.pdb
+D:\files test\uni\vscodeeeeae2\ae2groupoop\obj\Debug\net9.0\ae2groupoop.GeneratedMSBuildEditorConfig.editorconfig
+D:\files test\uni\vscodeeeeae2\ae2groupoop\obj\Debug\net9.0\ae2groupoop.AssemblyInfoInputs.cache
+D:\files test\uni\vscodeeeeae2\ae2groupoop\obj\Debug\net9.0\ae2groupoop.AssemblyInfo.cs
+D:\files test\uni\vscodeeeeae2\ae2groupoop\obj\Debug\net9.0\ae2groupoop.csproj.CoreCompileInputs.cache
+D:\files test\uni\vscodeeeeae2\ae2groupoop\obj\Debug\net9.0\ae2groupoop.sourcelink.json
+D:\files test\uni\vscodeeeeae2\ae2groupoop\obj\Debug\net9.0\ae2groupoop.dll
+D:\files test\uni\vscodeeeeae2\ae2groupoop\obj\Debug\net9.0\refint\ae2groupoop.dll
+D:\files test\uni\vscodeeeeae2\ae2groupoop\obj\Debug\net9.0\ae2groupoop.pdb
+D:\files test\uni\vscodeeeeae2\ae2groupoop\obj\Debug\net9.0\ae2groupoop.genruntimeconfig.cache
+D:\files test\uni\vscodeeeeae2\ae2groupoop\obj\Debug\net9.0\ref\ae2groupoop.dll
