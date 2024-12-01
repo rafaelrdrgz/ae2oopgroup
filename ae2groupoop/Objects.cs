@@ -188,6 +188,7 @@ public class Light : SmartDevice, ILightBulb {
     }
 }
 
+// interface for any given light bulb, ensures there's a function for brightness, colour, and turning it on/off
 public interface ILightBulb {
     public void SetBrightness( int brightness);
     public void SetColour(string colour);
@@ -227,6 +228,7 @@ public class SecurityCamera : SmartDevice, ICameraRecording {
     }
 }
 
+// interface for any type camera, ensures there's a method to turn it on/off
 public interface ICameraRecording {
     public void ToggleRecording();
 }
@@ -244,14 +246,14 @@ public class Thermostat : SmartDevice, ITemperatureManagement{
         SetStatus($"Temperature: {Temperature}°C, Humidity: {Humidity}%, Mode: {Mode}");
     }
 
-    // change temperature, change status to reflect this, if temperature changed by 10 degrees or more, notify observers
+    // change temperature, change status to reflect this, if temperature changes, notify observers
     public void SetTemperature(float newTemp) {
         Temperature = newTemp;
         SetStatus($"Temperature: {Temperature}°C, Mode: {Mode}");
         NotifyObservers("Temperature updated.");
     }
 
-    // change humidity, if humidity changed by 25% or more, notify observers
+    // change humidity, if humidity changed, notify observers
     public void SetHumidity(float newHumidity) {
         Humidity = newHumidity;
         Console.WriteLine($"Humidity set to {Humidity}%.");
@@ -266,6 +268,7 @@ public class Thermostat : SmartDevice, ITemperatureManagement{
     }
 }
 
+// interface for any given thermostat, ensures it has ability to set temperature, humidity, and mode
 public interface ITemperatureManagement {
     public void SetTemperature(float temperature);
     public void SetHumidity(float humidity);
