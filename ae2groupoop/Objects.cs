@@ -152,7 +152,7 @@ public abstract class SmartDevice {
 // light as a derived class of smartdevice established with its given features
 // brightness and colour as settings and methods that can be configured by the user
 // option to notify observer if subscribed to notifications
-public class Light : SmartDevice {
+public class Light : SmartDevice, ILightBulb {
     public int Brightness { get; private set; }
     public string Colour { get; private set; }
     public Boolean IsOn { get; private set; }
@@ -188,12 +188,18 @@ public class Light : SmartDevice {
     }
 }
 
+public interface ILightBulb {
+    public void SetBrightness( int brightness);
+    public void SetColour(string colour);
+    public void ToggleOnOff();
+}
+
 // securitycamera as a derived class of smartdevice established with its given features
 // resolution can be set by the user
 // isrecording is configured by the startrecording() and stoprecording() methods
 // option to receive camera feed and gallery
 // notify the observer if subscribed to notifications
-public class SecurityCamera : SmartDevice {
+public class SecurityCamera : SmartDevice, ICameraRecording {
     public string Resolution { get; private set; }
     public Boolean IsRecording { get; private set; }
 
@@ -221,10 +227,14 @@ public class SecurityCamera : SmartDevice {
     }
 }
 
+public interface ICameraRecording {
+    public void ToggleRecording();
+}
+
 // thermostat as a derived class of smartdevice established with its given features
 // temperature, humidity, and mode as settings and methods that can be configured by the user
 // observer will be notified if subscribed to notifications for the device and notification is sent
-public class Thermostat : SmartDevice {
+public class Thermostat : SmartDevice, ITemperatureManagement{
     public float Temperature { get; private set; }
     public float Humidity { get; private set; }
     public string Mode { get; private set; }
@@ -254,4 +264,10 @@ public class Thermostat : SmartDevice {
         Console.WriteLine($"Mode set to {Mode}.");
         NotifyObservers($"Mode changed to {Mode}.");
     }
+}
+
+public interface ITemperatureManagement {
+    public void SetTemperature(float temperature);
+    public void SetHumidity(float humidity);
+    public void SetMode(string mode);
 }
