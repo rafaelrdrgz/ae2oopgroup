@@ -90,15 +90,16 @@ public class CentralSystem {
 // user class
 public class User {
     // initialising generic user information here
+    private static int LastAssigedID = 0;
     public int UserID { get; }
     public string Name { get; }
-    public string ContactInfo { get; set; }
+    private string ContactInfo { get; set; }
     private List<string> Notifications = new();
     private List<SmartDevice> Subscriptions = new();
 
     // initialise user
-    public User(int userID, string name) {
-        UserID = userID; Name = name;
+    public User(string name) {
+        UserID = ++LastAssigedID; Name = name;
     }
 
     // send notification for a particular user

@@ -19,8 +19,8 @@ public class Program
         centralSystem.AddDevice(thermostat);
 
         // initializing users
-        User user1 = new User(1, "Alice");
-        User user2 = new User(2, "Bob");
+        User user1 = new User("Alice");
+        User user2 = new User("Bob");
 
         // adding these users to notification manager
         centralSystem.AddObserver(user1);
@@ -199,7 +199,7 @@ public class Program
             {
                 Console.Write("Enter User Name: ");
                 string name = Console.ReadLine();
-                User newUser = new User(userId, name);
+                User newUser = new User(name);
                 centralSystem.AddObserver(newUser);
             }
         }

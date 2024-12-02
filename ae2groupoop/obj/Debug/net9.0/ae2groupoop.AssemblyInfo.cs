@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ae2groupoop")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d1e0957f0e6944381ba2237e0f160fcc37842590")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ad0ed6b90d9f6b583bd0922addfc8021cb60925c")]
 [assembly: System.Reflection.AssemblyProductAttribute("ae2groupoop")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ae2groupoop")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
